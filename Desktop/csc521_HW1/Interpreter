@@ -1,3 +1,15 @@
+#
+
+
+#I'm so sorry this isn't finished.  The project is taking so so much longer than I planned.
+#I will be out of the country for a week, and was wondering if I could get some time to finish this when I return in a week.
+#Thank you!
+
+
+
+
+
+
 import sys
 import print
 
@@ -89,15 +101,6 @@ def get_number_from_ident(tok):
     return float(tok[colon_index+1:])
 
 def func_by_name(*args):
-    '''Calls a function whos name is given as a parameter. It requires the parse
-        tree associated with that point in the grammar traversal and the current
-        scope.
-    *args is interpreted as
-        name = args[0] -- the name of the function to call
-        pt = args[1] -- the subtree of the parse tree associated with the name
-        scope = args[2] -- the scope the subtree should use
-    return - Pass through the return value of the called function.
-    '''
     name = args[0]
     pt = args[1]
     scope = args[2]
@@ -145,7 +148,7 @@ def FunctionParams0(pt, scope):
     return func_by_name(pt[1][0], pt[1], scope)
 
 def FunctionParams1(pt, scope):
-    return []
+    return func_by_name(pt[1][1], pt[1], scope)
 
 # <FunctionBody> -> <Program> <Return> | <Return>
 def FunctionBody1(pt, scope):

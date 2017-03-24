@@ -1,9 +1,0 @@
-from Lexer_Final import Lexer
-
-
-code = (""function x = (y+z) ^s {"+
-  "return x"+
-"} var y = 1, var z = 4, var s = 2)")"
-
-tokens = Lexer_Final(code)
-print tokens

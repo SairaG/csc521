@@ -1,0 +1,19 @@
+Lexer - 21/30
+
+  Can not run lexer but the code shows work as well as a solid implementation.
+
+Parser: 18/30
+
+  Partial parser, can not run. Though it does show signs of life as well as work.
+
+Interpreter: 5/20
+
+  Appears to be the same skeleton code that was given in class, but is actually
+  in proper directory.
+
+Style: 15/20
+
+    The readme contained no information on how to run the project as well as
+    no version number.
+
+    The files are not properly named.
